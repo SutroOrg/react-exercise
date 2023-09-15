@@ -4,7 +4,12 @@ import TreeView from "./TreeView";
 export default function App() {
   return (
     <div className="App">
-      <TreeView />
+      <div className="container">
+        <TreeView />
+      </div>
+      <div className="container">
+        <TreeView />
+      </div>
     </div>
   );
 }
