@@ -1,12 +1,17 @@
-import { TreeNode } from "./tree-node";
+import { TreeRoot } from "./tree-node";
 
-export const root: TreeNode[] = [
+export const root: TreeRoot = [
   {
     label: "Node 1",
     trees: [
       {
         label: "Node 2",
-        trees: [{ label: "Node 3", trees: [] }],
+        trees: [
+          {
+            label: "Node 3",
+            trees: [],
+          },
+        ],
       },
       {
         label: "Node 4",

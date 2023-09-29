@@ -6,3 +6,8 @@ export interface TreeNode {
   readonly label: string;
   readonly trees: ReadonlyArray<TreeNode>;
 }
+
+/**
+ * The root of a tree is, effectively, a node with no label. As such, it is represented by an array of nodes
+ */
+export type TreeRoot = ReadonlyArray<TreeNode>
