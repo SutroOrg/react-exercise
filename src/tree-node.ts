@@ -10,4 +10,4 @@ export interface TreeNode {
 /**
  * The root of a tree is, effectively, a node with no label. As such, it is represented by an array of nodes
  */
-export type TreeRoot = ReadonlyArray<TreeNode>
+export interface TreeRoot extends ReadonlyArray<TreeNode> {}
