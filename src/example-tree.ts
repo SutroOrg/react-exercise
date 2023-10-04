@@ -1,4 +1,4 @@
-import { TreeRoot } from "./tree-node";
+import type { TreeRoot } from "./tree-node";
 
 export const root: TreeRoot = [
   {

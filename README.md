@@ -14,10 +14,11 @@ The only styling that is required is anything needed to achieve the appropriate 
 
 ### Notes
 
- - The `TreeNode` type cannot be modified, since it should be considered an external type
+ - The `TreeNode` & `TreeRoot` types cannot be modified, since it should be considered an external type
  - The example tree should also be considered external; imagine, if you like, that we received it from a `fetch` call.
- - The component can assume that the tree that gets passed in is valid and compliant with the defined types
+ - You can assume that the tree that gets passed in is valid and compliant with the defined types
  - You can assume that the `TreeRoot` always contains at least one `TreeNode`
+ - Expanding and collapsing of tree nodes are out of scope
 
 ## Part Two
 
@@ -29,4 +30,4 @@ Each `TreeView` in the `App` component should display the same tree. Updates to 
 ### Notes
 
  - The only modifications that will be supported are label updates
- - Adding, removing or relocating `TreeNode`s is out of scope
+ - Adding, removing or relocating `TreeNode`s are out of scope
