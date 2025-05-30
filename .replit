@@ -1,6 +1,7 @@
-run = "yarn run dev"
+run = "npm run dev"
 language = "typescript"
 hidden = [".config", "package-lock.json", "tsconfig.json"]
+modules = ["nodejs-20", "web", "nix"]
 
 [packager]
 language = "nodejs-yarn"
@@ -10,7 +11,7 @@ language = "nodejs-yarn"
   guessImports = true
 
 [nix]
-channel = "stable-22_11"
+channel = "stable-24_05"
 
 [env]
 XDG_CONFIG_HOME = "$REPL_HOME/.config"
@@ -25,4 +26,11 @@ requiredFiles = [".replit", "replit.nix", ".config"]
     pattern = "**/{*.ts,*.js,*.tsx,*.jsx,*.json}"
     [languages.typescript.languageServer]
     start = "typescript-language-server --stdio"
+
+[deployment]
+run = ["sh", "-c", "npm run dev"]
+
+[[ports]]
+localPort = 5173
+externalPort = 80
 
